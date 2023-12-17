@@ -4,6 +4,10 @@ exports.homepage = async (req, res) => {
       title: "Not-E",
       description: "An online note taking app.",
     }
+    res.render('index', {
+      locals,
+      layout: '../views/layouts/front-page'
+    });
 }
 
 // About
