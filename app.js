@@ -22,8 +22,10 @@ app.get('/', function(req, res){
 });
 
 
-// Route 
+// Routes
 app.use('/', require('./server/routes/index'));
+app.use('/', require('./server/routes/dashboard'));
+
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
