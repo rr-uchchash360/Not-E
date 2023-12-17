@@ -5,4 +5,13 @@ exports.homepage = async (req, res) => {
       description: "An online note taking app.",
     }
 }
+
+// About
+exports.about = async (req, res) => {
+  const locals = {
+    title: "About Not-E",
+    description: "About : An online note taking app.",
+  }
+  res.render('about', locals);
+}
   
